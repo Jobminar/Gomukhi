@@ -1,0 +1,80 @@
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+h4 {
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    text-align: start;
+}
+
+.Pochannapet-layout .text-content {
+    padding-right: 15px;
+    max-height: max-content;
+    text-align: start;
+    /* Center align text content */
+}
+
+.Pochannapet-layout .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align images */
+    padding-left: 15px;
+    margin-top: 20px;
+    /* Add some margin for spacing */
+}
+
+.Pochannapet-layout .feature-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.wonders-content {
+    margin-top: 15rem;
+}
+
+.image-container {
+    padding: 5px 0;
+}
+
+.feature-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .Pochannapet-layout .text-content {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .Pochannapet-layout .image-container {
+        align-items: center;
+    }
+
+    .Pochannapet-layout .feature-image {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+
+    .image-container {
+        padding: 5px 0;
+    }
+
+    .feature-image {
+        margin-bottom: 5px;
+    }
+
+    .pochannapet-foot img {
+        width: 16rem;
+    }
+}

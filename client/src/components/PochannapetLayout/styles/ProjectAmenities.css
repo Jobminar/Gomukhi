@@ -1,0 +1,31 @@
+/* ProjectAmenities.css */
+
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+.project-amenities {
+    padding: 20px 0;
+    background-color: #f4f4f4;
+    /* Replace with your color */
+}
+
+.amenity {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.amenity-icon {
+    /* Icon styles */
+    margin-bottom: 10px;
+}
+
+.amenity-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.amenity-description {
+    color: #666;
+    font-size: 0.9rem;
+}

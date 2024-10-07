@@ -1,0 +1,118 @@
+/* ContactInfo.css */
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+/* Default styling for the icons */
+.icon {
+    width: 2.5rem;
+    /* Default width */
+    height: auto;
+    /* Default height */
+    margin: 0.2rem
+}
+
+/* Responsive styling */
+
+
+@media (max-width: 576px) {
+    .icon {
+        width: 30px;
+        /* Further adjusted width for extra small screens */
+        height: 30px;
+        /* Further adjusted height for extra small screens */
+    }
+}
+
+
+.contact-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-banner-title {
+    position: absolute;
+    top: 38%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Arima Madurai', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.contact-info {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+}
+
+.contact-info .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-info .card {
+    width: 280px;
+    height: 290px;
+    margin: 0.5rem;
+    /* Adds space around the cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-info .card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-info .card-body {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.contact-info .card-title {
+    font-weight: 700;
+    color: #000000;
+    font-family: 'Arima Madurai', cursive;
+    margin-bottom: 1.8rem;
+}
+
+.contact-info .card-text {
+    font-weight: 600;
+    color: #555;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .contact-info .card {
+        width: 90%;
+        /* Set width to 90% to make the cards slightly smaller */
+        max-width: 300px;
+        /* Limit the maximum width of the cards */
+        margin: 0 auto 1rem auto;
+        /* Center-align the cards and add spacing */
+    }
+
+    .contact-info .card-body {
+        padding: 0.5rem;
+        /* Reduce padding inside the card body */
+    }
+
+    .contact-info .card-title,
+    .contact-info .card-text {
+        font-size: 0.85rem;
+        /* Slightly smaller font size for titles and text */
+    }
+
+    .icon {
+        width: 5rem;
+        /* Adjusted width for smaller screens */
+        height: auto;
+        /* Adjusted height for smaller screens */
+    }
+}

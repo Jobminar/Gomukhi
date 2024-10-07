@@ -1,0 +1,28 @@
+/* ProjectFeatures.css */
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+.project-features {
+    padding: 20px 0;
+}
+
+.project-feature {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.project-feature-icon {
+    /* Add styles for your icons here */
+    margin-bottom: 10px;
+}
+
+.project-feature-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.project-feature-description {
+    color: #666;
+    font-size: 0.9rem;
+}

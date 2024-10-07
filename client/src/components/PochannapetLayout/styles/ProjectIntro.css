@@ -1,0 +1,10 @@
+/* ProjectIntro.css */
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+.project-intro {
+    /* background: url('/path-to-background-image.jpg') no-repeat center center; */
+    background-size: cover;
+    color: #fff;
+}

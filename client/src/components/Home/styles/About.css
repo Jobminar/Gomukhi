@@ -1,0 +1,93 @@
+/* About.css */
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+.about-section {
+    padding: 3rem 0;
+    text-align: left;
+    background-color: #F5F5F5;
+    border-radius: 0.5rem;
+    width: 95.8%;
+
+}
+
+.about-title {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.about-description-col {
+    margin-right: 1rem;
+}
+
+.about-description {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.8;
+
+
+}
+
+.about-image-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image {
+    width: 100%;
+    height: 19rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        width: auto;
+        padding: 3rem 1rem;
+        /* Consistent padding around the section */
+        /* text-align: center; */
+        /* Aligns all text inside the section to the center */
+    }
+
+    .about-description-col {
+        font-size: 0.9rem;
+        /* Slightly smaller font size for better readability on mobile */
+        margin: 0;
+        /* Remove margins for full width usage */
+        padding: 1px;
+        /* No padding to allow content to use full width of its container */
+        flex: 0 0 100%;
+        /* Ensures the column takes the full width available */
+        max-width: 100%;
+        /* Prevents any overflow beyond the parent width */
+        text-align: justify;
+    }
+
+    .about-description {
+        font-family: 'Arima Madurai', cursive;
+        font-size: 1rem;
+        color: #000000;
+        line-height: 1.8;
+        padding-left: 2.1rem;
+        padding-right: 2.1rem;
+
+    }
+
+    .about-image {
+        display: none;
+        /* Hides the image on smaller screens */
+    }
+
+    .about-title {
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}

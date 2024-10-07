@@ -1,0 +1,107 @@
+/* ValuesSection.css */
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+h4 {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-weight: 700;
+}
+
+.values-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    /* Background color */
+}
+
+.values-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Adjust based on design preference */
+}
+
+.value-card {
+    flex: 1 0 30%;
+    /* Will occupy 30% of the container's width */
+    height: 300px;
+    /* Fixed height for large screens */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 0.2rem;
+    background-color: #ffffff;
+    /* White background for cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Ensures space distribution inside the card */
+}
+
+.value-image {
+    width: 8rem;
+    height: auto;
+    border-radius: 10px;
+    /* Full circle */
+    object-fit: cover;
+    margin: 0.1rem auto;
+    padding-top: 5px;
+}
+
+.value-card .card-body {
+    padding: 1rem;
+}
+
+.value-card .card-title {
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Arima Madurai', cursive;
+    margin-bottom: 1rem;
+}
+
+.value-card .card-text {
+    font-size: 0.8rem;
+}
+
+/* Adjust card layout for different screen sizes */
+@media (max-width: 1200px) {
+    .value-card {
+        flex: 1 0 48%;
+        /* Two cards per row */
+        height: 280px;
+        /* Slightly smaller height for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .value-card {
+        flex: 1 0 100%;
+        /* One card per row */
+        height: 250px;
+        /* Even smaller height for small screens */
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .value-card {
+        height: 220px;
+        /* Smallest height for very small screens */
+    }
+
+    .value-card .card-title,
+    .value-card .card-text {
+        font-size: 0.9rem;
+        /* Smaller font size for readability */
+    }
+
+    .value-image {
+        width: 8rem;
+        height: auto;
+        /* Smaller image size for consistency */
+    }
+}

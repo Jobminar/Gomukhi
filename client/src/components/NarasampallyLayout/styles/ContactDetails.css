@@ -1,0 +1,22 @@
+/* ContactDetails.css */
+
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+
+.contact-details {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact-details h2 {
+    margin-bottom: 20px;
+    color: #333;
+    /* Replace with your color */
+}
+
+.contact-details p {
+    color: #666;
+    /* Replace with your color */
+}

@@ -1,0 +1,109 @@
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+.why-choose-us {
+    padding: 0.8rem 0.8rem;
+    background-color: #EFEFED;
+    width: 100%;
+    margin: 0;
+    border-radius: 10px;
+    /* Light grey background for the entire section */
+}
+
+.why-choose-us-title {
+
+    font-weight: 700;
+    color: #000000;
+    margin: 0.15rem;
+    margin-top: 3rem;
+    font-family: "Nunito", sans-serif;
+    /* Reduced margin */
+}
+
+hr {
+    height: 4px;
+    background-color: rgb(255, 0, 0);
+    width: 2rem;
+    margin: 0.9rem 0.2rem;
+    border-radius: 5px;
+}
+
+.why-choose-us-subtitle {
+    font-family: 'Arima Madurai', cursive;
+    font-weight: 400;
+    color: #666;
+    margin: 0.15rem;
+    margin-bottom: 1.5rem;
+    /* Reduced margin */
+}
+
+.why-choose-us-feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.125rem;
+    /* Reduced margin */
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 1.8rem;
+    /* Reduced padding */
+}
+
+.why-choose-us-icon {
+    flex-shrink: 0;
+    width: 90px;
+    /* Reduced width */
+    height: 90px;
+    /* Reduced height */
+    border-radius: 50%;
+    margin-right: 0.75rem;
+    /* Reduced margin */
+}
+
+.why-choose-us-info-title {
+    font-family: 'Arima Madurai', cursive;
+    font-weight: 700;
+    color: #000;
+}
+
+.why-choose-us-info-text {
+    font-family: 'Arima Madurai', cursive;
+    font-weight: 400;
+    color: #666;
+}
+
+.why-choose-us-feature-image {
+    max-width: 50rem;
+    height: 30rem;
+    margin-left: 9.8rem;
+    margin-top: 8rem;
+    margin-right: 0.1px;
+    border-radius: 4px;
+
+}
+
+@media (max-width: 991px) {
+    .why-choose-us-feature {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .why-choose-us-icon {
+        width: 70px;
+        /* Further reduced for mobile */
+        height: 70px;
+        /* Maintain aspect ratio */
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .why-choose-us-feature-image {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+        /* Reduced space for mobile */
+    }
+}

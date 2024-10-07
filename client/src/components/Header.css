@@ -1,0 +1,267 @@
+/* Ensure your CSS path is correct */
+
+.navbar {
+    background-color: #ffffff;
+    height: 4rem;
+    /* White background color */
+    padding: 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+    /* Darker drop shadow */
+}
+
+.navbar .container,
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    /* Align logos vertically */
+}
+
+
+/* Specificity increase to override default Bootstrap styles */
+.navbar .dropdown-menu .dropdown-item:active,
+.navbar .dropdown-menu .dropdown-item.show,
+.navbar .dropdown-menu .dropdown-item:focus {
+    color: #F9690C;
+    /* Orange text color */
+    background-color: white;
+    /* White background */
+}
+
+/* Override for the dropdown toggle when active */
+#basic-nav-dropdown:active,
+#basic-nav-dropdown.show {
+    color: #F9690C;
+    /* Orange text color */
+    background-color: white;
+    /* White background */
+}
+
+
+.logo {
+    width: auto;
+    height: 3.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-logo {
+    display: none;
+    /* Hidden by default */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    /* Chocolate color */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: #000000;
+    /* Chocolate color */
+    padding: 0.5rem 1rem;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.navbar-nav .nav-link.active {
+    color: #F9690C;
+    /* Active link color */
+    font-weight: bolder;
+    /* Font weight for active link */
+}
+
+
+.navbar-toggler {
+    border-color: #d2691e;
+    /* Chocolate color for the hamburger menu */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba(210, 105, 30, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.navbar .book-plot-btn {
+    font-size: 1rem;
+
+    color: #000000;
+    background-color: #F9E9CB;
+    /* Original button color */
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+}
+
+.navbar .book-plot-btn:hover {
+    background-color: #cc8400;
+    /* Darker on hover */
+}
+
+
+.navbar-toggler {
+    border: none;
+    /* Removes the border if you want */
+}
+
+.navbar-toggler img {
+    height: 2.5rem;
+    /* Set the height to fit your design */
+    width: 2.5rem;
+    /* Set the width to fit your design */
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .navbar {
+        height: 5.1rem;
+        padding: 0px
+    }
+
+    .navbar-collapse.collapsing {
+        transition: height 0.4s ease-in-out;
+        transition-delay: 0.1s;
+        /* Adds a delay to the start of the transition */
+    }
+
+    .navbar-collapse.show {
+        transition: height 0.4s ease-in-out;
+    }
+
+
+    .navbar-nav .dropdown-item {
+        text-align: center;
+        padding: 8px;
+        background-color: #F9E9CB;
+        /* Chocolate color */
+        color: #000000;
+        /* Initial text color */
+        transition: background-color 0.3s, color 0.3s;
+
+    }
+
+    .navbar-nav .dropdown-item:hover,
+    .navbar-nav .dropdown-item:focus,
+    .navbar-nav .dropdown-item:active {
+        background-color: #976357;
+        /* Chocolate color */
+        color: #F9E9CB;
+        /* Biscuit text color */
+    }
+
+
+    .navbar-nav {
+        flex-direction: column;
+
+        /* Stack nav items vertically */
+    }
+
+    .navbar-brand .mobile-logo {
+        display: block;
+        /* Show mobile logo */
+        margin-left: 2.1rem;
+        margin-right: 0;
+        width: 11rem;
+        height: auto;
+        /* Space between logos */
+    }
+
+
+
+    .navbar-nav .nav-link {
+        text-align: center;
+        padding: 8px;
+        background-color: #F9E9CB;
+        /* Biscuit background color for nav links */
+        color: #976357;
+        /* Initial text color */
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus,
+    .navbar-nav .nav-link:active {
+        background-color: #976357;
+        /* Chocolate color */
+        color: #F9E9CB;
+        /* Biscuit text color */
+    }
+
+    .navbar-toggler {
+        color: #d2691e;
+        /* Chocolate color for the hamburger menu */
+    }
+
+    .navbar .book-plot-btn {
+        background-color: #ffa500;
+        /* Original button color */
+        color: white;
+        transition: background-color 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: auto;
+    }
+
+    .logo {
+        width: 3.8rem;
+        height: auto;
+        margin: 4.5px;
+        padding: 0;
+    }
+
+    .navbar .dropdown-menu .dropdown-item:active,
+    .navbar .dropdown-menu .dropdown-item.show,
+    .navbar .dropdown-menu .dropdown-item:focus {
+        background-color: #976357;
+        /* Chocolate color */
+        color: #F9E9CB;
+        /* White background */
+    }
+
+    #basic-nav-dropdown:active,
+    #basic-nav-dropdown.show {
+        background-color: #976357;
+        /* Chocolate color */
+        color: #F9E9CB;
+        /* White background */
+    }
+
+    .navbar .dropdown-menu .dropdown-item,
+    .navbar .dropdown-menu .dropdown-item,
+    .navbar .dropdown-menu .dropdown-item {
+        width: 95%;
+        margin-left: 1rem
+    }
+
+
+    #basic-nav-dropdown {
+
+        width: 95%;
+        margin-left: 1rem
+    }
+}

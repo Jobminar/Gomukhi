@@ -1,0 +1,187 @@
+/* Global Styles */
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+.latest-projects-container {
+    padding: 2rem 5px;
+    background: #F5F5F5;
+    border-radius: 10px;
+}
+
+/* Section Title */
+.section-title {
+    margin-bottom: 4rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+
+#top-title-left {
+    text-align: center;
+}
+
+#top-title-right {
+    text-align: center;
+}
+
+.center-align {
+    text-align: center;
+    /* Center the text horizontally */
+}
+
+/* Project Card Styling */
+.project-card {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    margin: 0.1rem;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    min-height: 400px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card.almasguda {
+    background-color: #FCE3B2;
+}
+
+.project-card.choutuppal {
+    background-color: #C9F3CB;
+}
+
+/* Text Alignment */
+.text-left {
+    text-align: left;
+}
+
+/* Card Titles */
+.project-title h6 {
+    font-size: 1rem;
+}
+
+.project-title h4 {
+    font-family: "Nunito", sans-serif;
+}
+
+/* Features Section */
+.project-features {
+    list-style-type: disc;
+    padding-left: 20px;
+    /* Add padding to align bullets to the left */
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-features h4 {
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 1.8rem;
+    text-align: center;
+}
+
+/* List Items */
+.project-features li {
+    color: #333;
+    text-align: left;
+    /* Aligns text to the left */
+    max-width: 100%;
+    /* Allows list items to take up full width */
+    line-height: normal;
+    padding: 0;
+    /* Adjust padding */
+    margin: 0;
+    /* Remove auto margin */
+}
+
+/* Image Styling */
+.top-image {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Scroll Window */
+.scrollwindow {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    position: relative;
+}
+
+/* Desktop and Mobile Views */
+.desktop-view {
+    display: block;
+}
+
+.mobile-view {
+    display: none;
+    /* Hide mobile view by default */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .desktop-view {
+        display: none;
+        /* Hide desktop view on mobile screens */
+    }
+
+    .mobile-view {
+        display: block;
+        /* Show mobile view on mobile screens */
+    }
+
+    .latest-projects-container {
+        padding: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .project-card {
+        margin: 0.5rem;
+    }
+
+    .carousel-item {
+        transition: transform 3s ease-in-out;
+        /* Adjust transition timing */
+    }
+
+    .carousel-indicators .active {
+        transition: width 3s ease;
+        /* Smooth transition for active indicator */
+    }
+
+    .project-features h4 {
+        font-family: "Nunito", sans-serif;
+        margin-bottom: 0.8rem;
+        text-align: center;
+    }
+
+    .section-title {
+        margin-top: 0.8rem;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        text-align: center;
+        font-family: "Nunito", sans-serif;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        padding: 0.5rem;
+    }
+
+    .project-features li {
+        padding: 0.2rem 0;
+    }
+}

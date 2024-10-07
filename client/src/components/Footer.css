@@ -1,0 +1,118 @@
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+.footer-container {
+    background-color: #F9E9CB;
+    /* Adjust the background color as needed */
+    color: #000000;
+    /* Ensuring all text is black by default */
+    padding: 2rem 0.2rem;
+
+}
+
+.footer-logo-col,
+.footer-address-col,
+.footer-contact-col {
+    color: #000;
+    /* Ensures all text within these columns is black */
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+    width: auto;
+    height: 100px;
+}
+
+.footer-address {
+    font-style: normal;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.footer-contact-header {
+    color: #000;
+    /* Black color for header */
+    margin-bottom: 10px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+
+}
+
+.footer-contact-info,
+.footer-contact-info a {
+    /* Targeting links specifically */
+    color: #000;
+    /* Black color for contact info and links */
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-decoration: underline;
+
+    /* Removes underline from links */
+}
+
+.footer-contact-info a:hover,
+.footer-contact-info a:focus {
+    color: #555;
+    /* Slightly lighter black on hover/focus for accessibility */
+}
+
+.footer-social-icons .social-icon {
+    width: 1.2rem;
+    /* Example size, adjust as needed */
+    height: auto;
+    margin: 0.1rem;
+    margin-right: 0.5rem
+        /* Maintains aspect ratio */
+}
+
+.footer-social-icons a {
+    color: #000;
+    /* Ensures link text (if any) is black */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-container {
+        background-color: #F9E9CB;
+        color: #000000;
+        padding-bottom: 5rem;
+        padding-top: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 0.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        /* Align items to the right */
+    }
+
+    .footer-logo {
+        height: 80px;
+    }
+
+    .footer-logo-col,
+    .footer-contact-col {
+        text-align: left;
+    }
+
+    .footer-social-icons {
+        justify-content: center;
+    }
+
+    .social-icon {
+        margin-right: 12px;
+        width: 0.1rem;
+        /* Example size, adjust as needed */
+        height: 0.1rem;
+    }
+
+    .footer-contact-header {
+        color: #000;
+        /* Black color for header */
+        margin-bottom: 10px;
+        font-family: "Nunito", sans-serif;
+        font-weight: bold;
+        justify-content: start;
+    }
+}

@@ -1,0 +1,17 @@
+/* ProjectDetails.css */
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+
+.project-details {
+    padding: 20px 0;
+}
+
+.project-details-text {
+    margin-bottom: 20px;
+}
+
+.project-details-images {
+    /* Styles for image container */
+}

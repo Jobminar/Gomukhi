@@ -1,0 +1,158 @@
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+.dream-home-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0;
+    border-radius: 10px;
+
+}
+
+.dream-home-section .house-image {
+    width: 100%;
+    max-width: 55rem;
+    height: auto;
+
+    z-index: 20;
+    /* Ensure higher z-index */
+    margin-bottom: 0.1rem;
+    transform: translateY(-70px);
+}
+
+.dream-home-section .text-container {
+    position: absolute;
+    /* Updated for consistent positioning */
+    width: 100%;
+    /* Ensure it spans the full width */
+    top: 0;
+    /* Align top to parent container */
+    background-color: #F5F5F5;
+    padding: 1rem;
+    text-align: right;
+    height: 10rem;
+    z-index: 1;
+    border-radius: 10px;
+
+    /* Lower than image z-index */
+}
+
+.dream-home-section .title {
+    font-family: "Nunito", sans-serif;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+    margin-right: 10rem;
+    border-radius: 10px;
+}
+
+.dream-home-section .subtitle {
+    font-family: 'Arima Madurai', cursive;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+    font-size: small;
+    margin-right: 11rem;
+    margin-top: 1rem;
+}
+
+.dream-home-section .explore-btn {
+    font-family: 'Arima Madurai', cursive;
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+    margin-top: 1.2rem;
+    margin-left: auto;
+    margin-right: 10.5rem;
+    position: absolute;
+    right: 2rem;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.dream-home-section .explore-btn:hover {
+    background-color: #cc8400;
+}
+
+.dream-home-section .arrow {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 992px) {
+    .dream-home-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dream-home-section .text-container {
+        width: 40%;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        text-align: right;
+        background-color: #F5F5F5;
+    }
+
+
+    .dream-home-section .house-image {
+        width: 100%;
+        max-width: 55rem;
+        height: auto;
+        border-radius: 10px;
+        z-index: 20;
+        /* Ensure higher z-index */
+        margin-bottom: 0.1rem;
+        transform: translateY(-70px);
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .dream-home-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .dream-home-section .house-image {
+        z-index: 1;
+        transform: translateY(0);
+        margin-bottom: -1.5rem;
+    }
+
+    .dream-home-section .text-container {
+        position: relative;
+        text-align: center;
+        top: auto;
+        right: auto;
+        margin-top: 1rem;
+
+    }
+
+    .dream-home-section .explore-btn {
+        position: relative;
+        right: 0;
+        top: 0;
+        margin-right: 0;
+    }
+
+    .dream-home-section .title,
+    .dream-home-section .subtitle {
+        margin-right: 0;
+    }
+}

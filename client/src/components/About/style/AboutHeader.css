@@ -1,0 +1,50 @@
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+.about-header {
+    background: url('../assets/images/Aboutusbanner.jpg') no-repeat center center;
+    background-size: cover;
+    /* Use 'cover' to ensure the image covers the entire container */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center the content vertically */
+    height: 10rem;
+    /* Set initial height for larger screens */
+    margin-top: 0;
+    position: relative;
+    border-radius: 5px;
+    width: 98%;
+    /* Ensures the div takes full width of the container */
+}
+
+.about-header h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    .about-header {
+        background-size: contain;
+        /* Ensure the whole image is visible */
+        background-position: center;
+        /* Center the background image */
+        height: 25vh;
+        /* Smaller height for better fit on mobile */
+        margin-top: -2.5rem;
+        /* Remove margin on top */
+    }
+
+    .about-header h1 {
+        font-size: 1.5rem;
+        /* Smaller font size for mobile devices */
+    }
+}

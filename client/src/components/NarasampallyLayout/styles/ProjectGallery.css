@@ -1,0 +1,19 @@
+/* ProjectGallery.css */
+
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+.project-gallery {
+    padding: 20px 0;
+}
+
+.project-gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    /* Replace with your color */
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 20px;
+}

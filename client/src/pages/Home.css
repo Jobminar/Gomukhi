@@ -1,0 +1,50 @@
+/* Home.css */
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+h1,
+h2,
+h4,
+.card-title {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    /* Ensures the bold style if the font itself doesn't enforce it */
+}
+
+.home-page {
+    margin: 0;
+    padding: 0;
+
+}
+
+.latest-projects-section,
+.salient-features-section,
+.about-section,
+.why-choose-us-section,
+.happy-customers-section {
+    padding: 20px;
+    /* Example padding; adjust as needed */
+    margin: auto;
+    /* Center the content */
+    max-width: 1200px;
+    /* Maximum width of the content area */
+}
+
+.dream-home-section {
+    padding: 5px 0;
+    background: #ffffff;
+}
+
+/* Responsive padding and margin adjustments */
+@media (max-width: 768px) {
+
+    .latest-projects-section,
+    .salient-features-section,
+    .about-section,
+    .why-choose-us-section,
+    .happy-customers-section {
+        padding: 1px;
+        /* Smaller padding for mobile */
+    }
+}

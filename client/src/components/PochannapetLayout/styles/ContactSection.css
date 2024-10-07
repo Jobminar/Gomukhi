@@ -1,0 +1,19 @@
+/* ContactSection.css */
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+.contact-section {
+    background: #f9f9f9;
+    /* Replace with your color */
+    padding: 40px 0;
+}
+
+.contact-section h2 {
+    margin-bottom: 25px;
+}
+
+.contact-section p {
+    color: #333;
+    /* Replace with your color */
+}

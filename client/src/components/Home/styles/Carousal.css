@@ -1,0 +1,7 @@
+.carousel-container {
+    max-width: 97%;
+    margin-left: auto;
+    margin-top: 0.8rem;
+    /* These two margins center the carousel */
+    margin-right: auto;
+}

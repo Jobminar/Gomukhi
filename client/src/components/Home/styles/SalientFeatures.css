@@ -1,0 +1,74 @@
+* {
+    font-family: 'Arima Madurai', cursive;
+}
+
+.salient-features {
+    background: linear-gradient(45deg, #C9F3CB, #FCE3B2);
+    color: #333;
+    padding: 1rem;
+    border-radius: 15px;
+    /* Rounded corners */
+    margin: 20px;
+    /* Provides spacing around the container */
+}
+
+.salient-features-header h2 {
+
+    font-weight: 700;
+    /* Bold */
+    font-size: 2rem;
+    /* Large text for the header */
+    text-align: center;
+    margin-bottom: 1rem;
+    /* Space below the header */
+}
+
+.feature {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    /* Space between items */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* Padding around each feature for spacing */
+}
+
+.feature-icon {
+    width: 20px;
+    /* Adjust size as needed */
+    height: 20px;
+    margin-right: 10px;
+    /* Space between icon and text */
+    opacity: 0.5;
+    /* Adjust opacity as needed */
+}
+
+
+.feature-text {
+    flex-grow: 1;
+    /* Takes up remaining space to align text properly */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .salient-features {
+        padding: 0.4rem;
+        /* Less padding on smaller devices */
+        margin: 9px;
+        width: 95%
+            /* Reduced margin */
+    }
+
+    .feature {
+        font-size: 1rem;
+        /* Slightly smaller font size */
+        justify-content: center;
+        /* Center content for better mobile presentation */
+    }
+
+    .salient-features-header h2 {
+        font-size: 1.75rem;
+        /* Slightly smaller header font size */
+    }
+}
