@@ -20,7 +20,7 @@ const LatestProject = () => {
                   <Col xs={12} md={10} lg={10}>
                     <div className="text-container align-items-start">
                       <h6 className="mb-0 center-align">Gomuki Infra</h6>
-                      <h4>Almasguda, Balapur</h4>
+                      <h4 className="ms-1">Almasguda, Balapur</h4>
                     </div>
                   </Col>
                 </Row>
@@ -54,7 +54,7 @@ const LatestProject = () => {
                   </Col>
                   <Col xs={12} md={10}>
                     <h6 className="mb-0 center-align">Sri Chandana</h6>
-                    <h4>Choutuppal Town</h4>
+                    <h4 className="ms-1">Choutuppal Town</h4>
                   </Col>
                 </Row>
               </Card.Title>
@@ -130,7 +130,7 @@ const LatestProject = () => {
                     <h6 className="mb-0 center-align" id="top-title-right">
                       Sri Chandana
                     </h6>
-                    <h4>Choutuppal Town</h4>
+                    <h4 className="ms-1">Choutuppal Town</h4>
                   </Col>
                 </Row>
               </Card.Title>
