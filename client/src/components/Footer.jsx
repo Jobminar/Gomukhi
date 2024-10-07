@@ -12,25 +12,23 @@ const Footer = () => {
   return (
     <Container fluid className="footer-container">
       <Row>
-        <Col sm={12} md={3} className="footer-logo-col">
+        <Col sm={6} md={{ span: 5, offset: 1 }} className="footer-logo-col">
           <img
             src={logoSvg}
             alt="Gomukhi infra projects Logo"
             className="footer-logo"
           />
-        </Col>
-        <Col sm={6} md={5} className="footer-address-col">
           <address className="footer-address">
             Plot No-209,
             <br />
-            Road No.2,Nagarjuna Colony,
+            Road No.2, Nagarjuna Colony,
             <br />
-            Sagar Road,Hasthinapuram,
+            Sagar Road, Hasthinapuram,
             <br />
-            Hyderabad,500079.
+            Hyderabad, 500079.
           </address>
         </Col>
-        <Col sm={6} md={4} className="footer-contact-col">
+        <Col sm={6} md={5} className="footer-contact-col">
           <h4 className="footer-contact-header">Get In Touch</h4>
           <p className="footer-contact-info">
             <a href="tel:+918500777078">
