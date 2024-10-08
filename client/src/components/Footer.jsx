@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { EnvelopeFill, TelephoneFill } from "react-bootstrap-icons";
 import "./Footer.css"; // Ensure CSS path is correct
@@ -9,6 +9,25 @@ import twitterIcon from "./assets/images/twitter.png";
 import linkedinIcon from "./assets/images/linkedin.png";
 
 const Footer = () => {
+  useEffect(() => {
+    // This will ensure the window.onload-like effect
+    const handleAddressClick = () => {
+      window.location.href = "https://maps.app.goo.gl/rPHps2z1FZBcfUYY7";
+    };
+
+    const addressElement = document.querySelector(".footer-address");
+    if (addressElement) {
+      addressElement.addEventListener("click", handleAddressClick);
+    }
+
+    return () => {
+      // Cleanup the event listener on component unmount
+      if (addressElement) {
+        addressElement.removeEventListener("click", handleAddressClick);
+      }
+    };
+  }, []);
+
   return (
     <Container fluid className="footer-container">
       <Row>
@@ -18,7 +37,7 @@ const Footer = () => {
             alt="Gomukhi infra projects Logo"
             className="footer-logo"
           />
-          <address className="footer-address">
+          <address className="footer-address" style={{ cursor: "pointer" }}>
             Plot No-209,
             <br />
             Road No.2, Nagarjuna Colony,
