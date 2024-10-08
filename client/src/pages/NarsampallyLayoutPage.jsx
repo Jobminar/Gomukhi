@@ -28,21 +28,21 @@ const NarasampallyLayout = () => {
           {/* Text Content */}
           <Col lg={12} className="text-content my-5 justify-content-center">
             <div className="layout-content mb-5">
-              <h4>Narasampally Layout</h4>
+              <h4>Almasguda Layout</h4>
               <p>
                 Nestled in the picturesque landscapes of Andhra Pradesh,
-                Narasampally Layout is a premier plotted land development
-                project by Gomukhi infra projects . With its strategic location
-                and world-class amenities, this layout is perfect for those
-                seeking a luxurious lifestyle amidst nature.
+                Almasguda Layout is a premier plotted land development project
+                by Gomukhi infra projects . With its strategic location and
+                world-class amenities, this layout is perfect for those seeking
+                a luxurious lifestyle amidst nature.
               </p>
 
               <p>
                 Nestled in the picturesque landscapes of Andhra Pradesh,
-                Narasampally Layout is a premier plotted land development
-                project by Gomukhi infra projects . With its strategic location
-                and world-class amenities, this layout is perfect for those
-                seeking a luxurious lifestyle amidst nature.
+                Almasguda Layout is a premier plotted land development project
+                by Gomukhi infra projects . With its strategic location and
+                world-class amenities, this layout is perfect for those seeking
+                a luxurious lifestyle amidst nature.
               </p>
             </div>
           </Col>

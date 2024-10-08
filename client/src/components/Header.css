@@ -21,7 +21,6 @@
     padding-right: 0;
     padding-left: 0;
     width: 100%;
-
 }
 
 .navbar-brand {
@@ -52,8 +51,8 @@
 
 
 .logo {
-    width: auto;
-    height: 3.5rem;
+    width: 12rem;
+    height: auto;
     margin: 0;
     padding: 0;
 }
@@ -184,7 +183,7 @@
         /* Show mobile logo */
         margin-left: 2.1rem;
         margin-right: 0;
-        width: 11rem;
+        width: 14rem;
         height: auto;
         /* Space between logos */
     }
@@ -228,16 +227,15 @@
     }
 
     .logo {
-        width: 3.8rem;
+        width: 10rem;
         height: auto;
-        margin: 4.5px;
         padding: 0;
     }
 
     .navbar .dropdown-menu .dropdown-item:active,
     .navbar .dropdown-menu .dropdown-item.show,
     .navbar .dropdown-menu .dropdown-item:focus {
-        background-color: #976357;
+        background-color: #F47437;
         /* Chocolate color */
         color: #F9E9CB;
         /* White background */
@@ -260,8 +258,7 @@
 
 
     #basic-nav-dropdown {
-
         width: 95%;
-        margin-left: 1rem
+        margin-left: 1.01rem
     }
 }

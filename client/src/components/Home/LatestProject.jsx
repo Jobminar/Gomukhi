@@ -11,7 +11,7 @@ const LatestProject = () => {
       <div className="desktop-view">
         <Row>
           <Col md={6} className="mb-3">
-            <Card className="project-card almasguda">
+            <Card className="project-card Almasguda">
               <Card.Title className="project-title my-4 mb-0">
                 <Row className="align-items-center no-gutters">
                   <Col xs={12} md={2} lg={2}>
@@ -83,7 +83,7 @@ const LatestProject = () => {
       <div className="mobile-view">
         <Carousel>
           <Carousel.Item>
-            <Card className="project-card almasguda">
+            <Card className="project-card Almasguda">
               <Card.Title className="project-title my-4 mb-0">
                 <Row className="align-items-center no-gutters">
                   <Col xs={12} md={2} lg={2}>

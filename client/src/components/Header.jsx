@@ -4,7 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { PencilSquare } from "react-bootstrap-icons";
 import logo from "./logo.svg";
-import mobileLogo from "./assets/images/mobileheader.png";
+import mobileLogo from "./assets/images/mobilelogo.png";
 import hamburgerIcon from "./hamburger.png";
 import "./Header.css"; // Ensure your CSS path is correct
 
@@ -32,7 +32,7 @@ const Header = () => {
           onClick={() => handleNavigation("/")}
         >
           <img src={logo} alt="Gomukhi infra projects Logo" className="logo" />
-          <img src={mobileLogo} alt="Mobile Logo" className="mobile-logo" />
+          {/* <img src={mobileLogo} alt="Mobile Logo" className="mobile-logo" /> */}
         </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar}>
           <img src={hamburgerIcon} alt="Menu" />
@@ -61,14 +61,14 @@ const Header = () => {
                 className="dropdown-item"
                 onClick={() => handleNavigation("/narsampally-layout")}
               >
-                Narsampally Layout
+                Almasguda project
               </NavLink>
               <NavLink
                 to="/pochannapet-layout"
                 className="dropdown-item"
                 onClick={() => handleNavigation("/pochannapet-layout")}
               >
-                Pochannapet Layout
+                Choutuppal project
               </NavLink>
               {/* Add more dropdown links as needed */}
             </NavDropdown>

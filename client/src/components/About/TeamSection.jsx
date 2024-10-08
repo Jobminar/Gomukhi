@@ -7,22 +7,19 @@ const TeamSection = () => {
   return (
     <Container className="team-section my-5 px-2 py-5">
       <Row className="align-items-center justify-content-center">
-        <h4>Meet Our Team</h4>
+        <h4>Our Motto</h4>
       </Row>
 
       <Row className="align-items-center">
-        <Col md={6} className="team-text">
+        <Col md={12} className="team-text">
           <p>
-            At Gomukhi infra projects , we believe in the principles of Mahatma
-            Gandhi and strive to create a positive impact on the communities we
-            serve. We understand the importance of long-term savings and wealth
-            creation for our customers, which is why we provide safe and secure
-            opportunities for them to own a piece of land and build a better
-            future for their families.
+            At Gomukhi Infra Projects, we are committed to fostering community
+            growth and making a lasting, positive impact. We recognize the
+            significance of long-term savings and wealth creation, which is why
+            we offer secure opportunities for customers to invest in land. Our
+            goal is to provide a safe, reliable pathway for individuals and
+            families to build a prosperous future through real estate ownership.
           </p>
-        </Col>
-        <Col md={6} className="text-center">
-          <img src={teamImage} alt="Team" className="img-fluid team-image" />
         </Col>
       </Row>
     </Container>

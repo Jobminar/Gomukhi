@@ -46,7 +46,9 @@
     /* Subtle shadow for depth */
     max-width: 100%;
     /* Fixed max-width for consistency */
-    height: auto;
+    height: 40rem;
+    border-radius: 10px;
+
     /* Maintain aspect ratio */
 }
 
