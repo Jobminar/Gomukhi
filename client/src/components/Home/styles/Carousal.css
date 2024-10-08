@@ -5,38 +5,126 @@
     margin-right: auto;
     margin-top: 0.8rem;
     position: relative;
-    /* Makes it easier to position the logo */
+}
+
+/* Overlay container */
+.carousel-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.05);
+    /* Adds a transparent dark background */
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    /* Adjust the width of the overlay */
+}
+
+/* Top Text (Above Title) */
+.carousel-top-text {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #ffefd5;
+    /* Soft light color for contrast */
+}
+
+.carousel-subtext {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #ffefd5;
+    /* Same soft color for consistency */
+}
+
+/* Title styling */
+.carousel-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Subtitle styling */
+.carousel-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Button container */
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Button styling */
+.carousel-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    /* Makes the buttons more rounded */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+    background-color: #f1f1f1;
 }
 
 /* Centering the logo */
 .carousel-logo-container {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* Centers the logo */
-    z-index: 10;
-    /* Ensures the logo appears above the images */
+    bottom: 20px;
+    right: 20px;
+    z-index: 15;
 }
 
 .carousel-logo {
-    width: 500px;
+    width: 150px;
     height: auto;
     opacity: 0.8;
-    /* Slight transparency for a subtle look */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .carousel-title {
+        font-size: 1.8rem;
+    }
+
+    .carousel-subtitle {
+        font-size: 1rem;
+    }
+
+    .carousel-button {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.8rem;
+    }
+
     .carousel-logo {
         width: 100px;
-        /* Smaller logo for smaller screens */
     }
 }
 
 @media (max-width: 576px) {
+    .carousel-title {
+        font-size: 1.5rem;
+    }
+
+    .carousel-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .carousel-button {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.7rem;
+    }
+
     .carousel-logo {
         width: 80px;
-        /* Further reduction for extra small screens */
     }
 }
