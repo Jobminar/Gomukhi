@@ -1,7 +1,42 @@
+/* Carousel Container */
 .carousel-container {
     max-width: 97%;
     margin-left: auto;
-    margin-top: 0.8rem;
-    /* These two margins center the carousel */
     margin-right: auto;
+    margin-top: 0.8rem;
+    position: relative;
+    /* Makes it easier to position the logo */
+}
+
+/* Centering the logo */
+.carousel-logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centers the logo */
+    z-index: 10;
+    /* Ensures the logo appears above the images */
+}
+
+.carousel-logo {
+    width: 500px;
+    height: auto;
+    opacity: 0.8;
+    /* Slight transparency for a subtle look */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-logo {
+        width: 100px;
+        /* Smaller logo for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-logo {
+        width: 80px;
+        /* Further reduction for extra small screens */
+    }
 }
