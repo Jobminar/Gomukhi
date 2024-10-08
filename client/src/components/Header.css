@@ -252,13 +252,13 @@
     .navbar .dropdown-menu .dropdown-item,
     .navbar .dropdown-menu .dropdown-item,
     .navbar .dropdown-menu .dropdown-item {
-        width: 95%;
+        width: 100%;
         margin-left: 1rem
     }
 
 
     #basic-nav-dropdown {
-        width: 95%;
+        width: 100%;
         margin-left: 1.01rem
     }
 }
