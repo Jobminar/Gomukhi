@@ -31,19 +31,19 @@ const PochannapetLayoutPage = () => {
             <div className="layout-content mb-5">
               <h4>Choutuppal Layout</h4>
               <p>
-                Nestled in the picturesque landscapes of Andhra Pradesh,
-                Choutuppal Layout is a premier plotted land development project
-                by Gomukhi infra projects . With its strategic location and
-                world-class amenities, this layout is perfect for those seeking
-                a luxurious lifestyle amidst nature.
+                Nestled in the picturesque landscapes of Telangana, Choutuppal
+                Layout is a premier plotted land development project by Gomukhi
+                infra projects . With its strategic location and world-class
+                amenities, this layout is perfect for those seeking a luxurious
+                lifestyle amidst nature.
               </p>
 
               <p>
-                Nestled in the picturesque landscapes of Andhra Pradesh,
-                Choutuppal Layout is a premier plotted land development project
-                by Gomukhi infra projects . With its strategic location and
-                world-class amenities, this layout is perfect for those seeking
-                a luxurious lifestyle amidst nature.
+                Nestled in the picturesque landscapes of Telangana, Choutuppal
+                Layout is a premier plotted land development project by Gomukhi
+                infra projects . With its strategic location and world-class
+                amenities, this layout is perfect for those seeking a luxurious
+                lifestyle amidst nature.
               </p>
             </div>
           </Col>
