@@ -22,7 +22,12 @@ const FounderMessage = () => {
           </p>
         </Col>
         <Col md={6}>
-          <img src={founderImage} alt="Founder" className="img-fluid" />
+          <img
+            src={founderImage}
+            alt="Founder"
+            className="img-fluid"
+            id="founder-img"
+          />
         </Col>
       </Row>
     </Container>
